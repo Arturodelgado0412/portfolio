@@ -120,6 +120,7 @@
 
 .menu {
     display: none;
+    cursor: pointer;
   }
 
 /*Mobile menu*/
@@ -135,7 +136,7 @@
     background-color: white;
     position: absolute;
     top: 120px;
-    z-index: 99;
+    z-index: 220;
   }
   .mobile-menu a {
     text-decoration: none;
@@ -269,10 +270,15 @@
             margin-top: 50px;
         }
 
+        .content-container{
+          height: 90vh;
+        }
+
         .container-content-left h1 {
           font-size: var(--font-family);
           font-size: 1.4rem;
           margin-bottom: 12px;
+          margin-top: 50px;
         }
 
         .container-content-left h2{
@@ -293,6 +299,7 @@
 
         .container-content-right img {
           width: 220px;
+          margin-top: -100px;
         }
       }
 
