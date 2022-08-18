@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --font-family: 'Rubik', sans-serif;
+}
+
+/* .navbar{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    align-items: center;
+} */
+
+#logo-section img{
+    width: 80px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 14vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+.container-left{
+    margin-left: 5%;
+}
+
+.container-right{
+    display: flex;
+    font-family: var(--font-family);
+    margin-right: 10%               ;
+    gap: 90px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+}
+
+
+.paragraph-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Toggle switch start*/
+/* From uiverse.io by @alexruix */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+
+  .switch-toggle{
+    margin-top: -10px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
+/*Toggle switch end*/
+
+
+.menu {
+    display: none;
+  }
+
+/*Mobile menu*/
+
+.inactive {
+    display: none;
+}
+
+.mobile-menu {
+    padding: 24px;
+    right: 0;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    z-index: 99;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+  }
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+  }
+  .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+  }
+
+  .rrss {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .rrss-img {
+    width: 40px;
+  }
+
+/*Section content container*/
+
+.content-container {
+    height: 86vh;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-content-left h1{
+    font-size: var(--font-family);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.container-content-left h2{
+    font-size: var(--font-family);
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+}
+
+.container-content-left p{
+    font-size: var(--font-family);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* .container-content-right{
+    text-align: center;
+} */
+
+.content-contact-button {
+        font-family: var(--font-family);
+        padding: 15px 25px;
+        border: unset;
+        border-radius: 15px;
+        color: black;
+        z-index: 1;
+        background: #e8e8e8;
+        position: relative;
+        font-weight: 500;
+        font-size: 1.2rem;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms;
+        overflow: hidden;
+        cursor: pointer;
+    }
+       
+.content-contact-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: #212121;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+       }
+       
+.content-contact-button:hover {
+        color: #e8e8e8;
+       }
+       
+.content-contact-button:hover::before {
+        width: 100%;
+       }
+
+       @media (max-width: 998px) {
+        .menu {
+          display: block;
+          margin-right: 50px;
+        }
+        .navbar-left ul {
+          display: none;
+        }
+        .navbar-email {
+          display: none;
+        }
+        .container-right {
+            display: none;
+        }
+        .container-content-left{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container-content-left h1 {
+          font-size: var(--font-family);
+          font-size: 1.4rem;
+          margin-bottom: 15px;
+        }
+
+        .container-content-left h2{
+          font-size: var(--font-family);
+          font-size: 2.8rem;
+          margin-bottom: 15px;
+      }
+      
+      .container-content-left p{
+          font-size: var(--font-family);
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+      }
+
+      .content-contact-button {
+        font-size: 1.0rem;
+      }
+
+        .container-content-right img {
+          width: 250px;
+        }
+      }
+
+    @media (min-width: 999px) {
+        .mobile-menu {
+            display: none;
+        }
+    }
