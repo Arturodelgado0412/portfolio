@@ -5,6 +5,11 @@
 
 :root{
     --font-family: 'Rubik', sans-serif;
+    --color1: #34e4ea;
+    --color2: #0eb1d2;
+    --color3: #2b4141;
+    --white: #FFFFFF;
+    --black: #000000;
 }
 
 /* .navbar{
@@ -23,10 +28,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 14vh;
+    height: 100px;
+    z-index: 200;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: #f2f2f2;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 }
 
 .container-left{
@@ -41,13 +49,12 @@
     font-weight: 500;
     font-size: 1.2rem;
     margin-top: 10px;
-
 }
 
 
 .paragraph-menu a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 /*Toggle switch start*/
@@ -75,14 +82,14 @@
   
   /* The slider */
   .slider {
-    --background: #28096b;
+    background: var(--color2);
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--background);
+    background-color: var(--color2);
     transition: .5s;
     border-radius: 30px;
   }
@@ -96,7 +103,7 @@
     left: 10%;
     bottom: 15%;
     box-shadow: inset 8px -4px 0px 0px #fff000;
-    background: var(--background);
+    background: var(--color2);
     transition: .5s;
   }
   
@@ -124,10 +131,10 @@
 .mobile-menu {
     padding: 24px;
     right: 0;
-    width: 50%;
+    width: 100%;
     background-color: white;
     position: absolute;
-    top: 85px;
+    top: 120px;
     z-index: 99;
   }
   .mobile-menu a {
@@ -170,13 +177,14 @@
 /*Section content container*/
 
 .content-container {
-    height: 86vh;
-    background-color: coral;
+    height: 100vh;
+    background-color: var(--white);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--black);
 }
 
 .container-content-left h1{
@@ -264,19 +272,19 @@
         .container-content-left h1 {
           font-size: var(--font-family);
           font-size: 1.4rem;
-          margin-bottom: 15px;
+          margin-bottom: 12px;
         }
 
         .container-content-left h2{
           font-size: var(--font-family);
           font-size: 2.8rem;
-          margin-bottom: 15px;
+          margin-bottom: 12px;
       }
       
       .container-content-left p{
           font-size: var(--font-family);
           font-size: 1.2rem;
-          margin-bottom: 20px;
+          margin-bottom: 18px;
       }
 
       .content-contact-button {
@@ -284,7 +292,7 @@
       }
 
         .container-content-right img {
-          width: 250px;
+          width: 220px;
         }
       }
 
