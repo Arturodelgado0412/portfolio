@@ -385,8 +385,8 @@
        div.container-projects{
         margin-top: 50px;
         display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(3, auto);
+        gap: 40px;
+        grid-template-columns: repeat(6, auto);
         justify-content: center;
        }
 
@@ -406,6 +406,57 @@
         background-color: #7360ff;
         transition: all 0.3s ease-in-out;
        }
+
+       .personal-projects{
+        margin-top: 90px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-evenly;
+        background-color: var(--black);
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       }
+
+       .container-personal-projects h2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+       }
+
+
+       .container-personal-projects img{
+        width: 350px;
+        cursor: pointer;
+        filter: grayscale(90%);
+       }
+
+       .container-personal-projects img:hover{
+        filter: none;
+       }
+
+       .github img {
+        width: 30px;
+        filter:invert(100)
+       }
+
+       .github{
+        display: flex;
+        justify-content: center;
+        margin-top: 2px;
+       }
+
+       .github a{
+        text-decoration: none;
+        color: white;
+       }
+
+       .github i {
+        font-size: 2rem;
+        cursor: pointer;
+       }
+
 
 
        @media (max-width: 998px) {
@@ -491,6 +542,24 @@
           font-family: var(--font-family);
           text-align: left;
           line-height: 1.6;
+         }
+
+         div.container-projects{
+          margin-top: 50px;
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(3, auto);
+          justify-content: center;
+         }
+
+         .personal-projects{
+          margin-top: 90px;
+          display: grid;
+          gap: 40px;
+          grid-template-columns: repeat(1, auto);
+          justify-content: space-evenly;
+          background-color: var(--black);
+          color: white;
          }
       }
 
